@@ -1,11 +1,18 @@
 /* ==========================================================================
-   POKOK — E-commerce Simulation Script (vanilla JS)
+   POKOK — E-commerce Simulation Script
    Sections:
    1. Product data
    2. State (cart)
    3. Rendering (product grid, cart drawer, checkout summary)
    4. Event wiring (nav, filters, search, modals, cart, checkout)
    ========================================================================== */
+
+/* 
+  Nama   : Muhammad Abiyyu Hafizh
+  NIM    : 250401070209
+  Kelas  : IF201
+  Mata Kuliah : Pemrograman Web 1
+ */
 
 (function () {
   'use strict';

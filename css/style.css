@@ -1,16 +1,12 @@
-/* ==========================================================================
-   POKOK — E-commerce Simulation Stylesheet
-   Design tokens:
-   --bg:      #EFECE6  warm stone paper background
-   --surface: #FFFFFF  card / panel surface
-   --ink:     #1B1A17  primary text / near-black
-   --muted:   #6F6A61  secondary text
-   --line:    #D8D3C9  hairline borders
-   --accent:  #C9A227  ochre "price-tag" accent
-   --accent-dark: #A9860F  accent hover/active
-   --danger:  #B3432B  remove/error state
-   Type: Archivo (display) / Inter (body) / IBM Plex Mono (labels, prices)
-   ========================================================================== */
+/* 
+   POKOK — Simulasi toko online
+*/
+/* 
+  Nama   : Muhammad Abiyyu Hafizh
+  NIM    : 250401070209
+  Kelas  : IF201
+  Mata Kuliah : Pemrograman Web 1
+ */
 
 :root {
   --bg: #EFECE6;
@@ -123,9 +119,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; letter-spacing:
 .btn-block { width: 100%; }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-/* ==========================================================================
+/* 
    HEADER
-   ========================================================================== */
+ */
 .site-header {
   position: sticky;
   top: 0;
