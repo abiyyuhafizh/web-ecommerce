@@ -1,5 +1,5 @@
 /* 
-   POKOK — Simulasi toko online
+   Clothestin — Simulasi toko online
 */
 /* 
   Nama   : Muhammad Abiyyu Hafizh
@@ -144,14 +144,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; letter-spacing:
   gap: 8px;
   margin-right: auto;
 }
-.logo-mark {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--accent-dark);
-  border: 1px solid var(--accent-dark);
-  border-radius: 4px;
-  padding: 1px 5px;
-}
+
 .logo-word {
   font-family: var(--font-display);
   font-weight: 800;
@@ -1016,7 +1009,6 @@ body.no-scroll { overflow: hidden; }
   .header-inner { gap: 10px; }
   .search-box { display: none; }
   .mobile-search { display: block; }
-  .logo-mark { display: none; }
   .logo-word { font-size: 19px; }
   .icon-btn { width: 40px; height: 40px; }
 

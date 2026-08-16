@@ -1,5 +1,5 @@
 /* ==========================================================================
-   POKOK — E-commerce Simulation Script
+   Clothestin — E-commerce Simulation Script
    Sections:
    1. Product data
    2. State (cart)
@@ -555,7 +555,7 @@
     }
 
     // Simulate order creation
-    const orderNum = 'POKOK-' + Math.floor(1000 + Math.random() * 9000);
+    const orderNum = 'Clothestin-' + Math.floor(1000 + Math.random() * 9000);
     orderNumberEl.textContent = '#' + orderNum;
 
     closeModal(checkoutModal, checkoutOverlay);
