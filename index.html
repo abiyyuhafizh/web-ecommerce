@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POKOK — Esensial Berlemari</title>
+<meta name="description" content="POKOK menjual pakaian dasar berkualitas: kaos polos, celana, dan sepatu untuk isi lemari sehari-hari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header website -->
+  <header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#home" class="logo" aria-label="POKOK — Beranda">
+      <span class="logo-mark">01</span>
+      <span class="logo-word">POKOK</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="search" id="searchInput" placeholder="Cari produk..." aria-label="Cari produk">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <button class="icon-btn" id="accountBtn" aria-label="Akun saya" title="Akun">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Buka keranjang belanja" title="Keranjang">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5h2l2.4 12.4a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="21" r="1.4" fill="currentColor"/><circle cx="17" cy="21" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+<!-- Kolom pencarian dibagian bawah header -->
+  <div class="mobile-search container">
+    <div class="search-box">
+      <input type="search" id="searchInputMobile" placeholder="Cari produk..." aria-label="Cari produk">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+  </div>
+</header>
+
+<!-- Menu navigasi -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile">
+  <div class="mobile-nav-head">
+    <span class="logo-word">POKOK</span>
+    <button class="close-btn" id="closeMobileNav" aria-label="Tutup menu">&times;</button>
+  </div>
+  <ul>
+    <li><a href="#home">Beranda</a></li>
+    <li><a href="#produk">Produk</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+  <div class="mobile-nav-foot">
+    <p class="eyebrow">Jam Operasional</p>
+    <p>Senin–Sabtu, 09.00–20.00</p>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero untuk video background tanpa suara -->
+  <section class="hero hero-video" id="home">
+    <div class="hero-media" aria-hidden="true">
+      <video
+        class="hero-bg-video"
+        poster="assets/video/hero-bg-poster.jpg"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        tabindex="-1">
+        <source src="assets/video/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-light">Koleksi Esensial No. 01</p>
+        <h1 class="hero-title-light">Isi lemarimu dengan yang <span class="hero-underline">pokok</span> saja.</h1>
+        <p class="hero-desc hero-desc-light">Kaos polos, celana, dan sepatu dasar yang dipilih supaya cocok dipakai apa saja, kapan saja. Tanpa motif ramai, tanpa keribetan — cuma potongan yang bisa diandalkan.</p>
+        <div class="hero-actions">
+          <a href="#produk" class="btn btn-primary">Belanja Sekarang</a>
+          <a href="#tentang" class="btn btn-ghost btn-ghost-light">Kenapa POKOK?</a>
+        </div>
+        <dl class="hero-stats hero-stats-light">
+          <div><dt>9</dt><dd>Produk pilihan</dd></div>
+          <div><dt>3</dt><dd>Kategori dasar</dd></div>
+          <div><dt>100%</dt><dd>Bahan nyaman</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-price-chip">
+        <span class="price-tag-label">Harga mulai</span>
+        <span class="price-tag-value">Rp149rb</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bilah kategori -->
+  <section class="categories" id="kategori">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Kategori</p>
+        <h2>Belanja per kebutuhan</h2>
+      </div>
+      <div class="category-pills" id="categoryPills" role="tablist" aria-label="Filter kategori produk">
+        <button class="pill active" data-category="all" role="tab" aria-selected="true">Semua Produk</button>
+        <button class="pill" data-category="atasan" role="tab" aria-selected="false">Atasan</button>
+        <button class="pill" data-category="celana" role="tab" aria-selected="false">Celana</button>
+        <button class="pill" data-category="sepatu" role="tab" aria-selected="false">Sepatu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informasi Katalog Produk -->
+  <section class="products" id="produk">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Katalog</p>
+        <h2>Produk POKOK</h2>
+      </div>
+      <p class="no-results" id="noResults" hidden>Tidak ada produk yang cocok dengan pencarian kamu.</p>
+      <div class="product-grid" id="productGrid"><!-- Informasi berada di file JS--></div>
+    </div>
+  </section>
+
+  <!-- Panel about -->
+  <section class="about" id="tentang">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <img src="assets/images/levis.jpg" alt="Celana jeans abu-abu POKOK" loading="lazy">
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">Cerita Kami</p>
+        <h2>Bukan tren musiman. Cuma yang dipakai terus.</h2>
+        <p>POKOK dimulai dari daftar belanja yang sama tiap bulan: kaos polos, celana yang enak dipakai, dan sepatu yang cocok dengan segalanya. Kami memutuskan untuk berhenti mencari-cari dan cukup menjualnya saja — dipilih ketat, distok terbatas, tanpa basa-basi.</p>
+        <ul class="about-points">
+          <li><strong>Dipilih ketat</strong> — setiap produk lolos uji pakai harian sebelum masuk katalog.</li>
+          <li><strong>Ukuran konsisten</strong> — potongan yang sama enaknya dari batch ke batch.</li>
+          <li><strong>Tanpa drama</strong> — harga jujur, stok jelas, kirim cepat.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Bila footer -->
+<footer class="site-footer" id="kontak">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-word">POKOK</span>
+      <p>Pakaian dasar untuk lemari yang lebih ringkas. Simulasi toko daring untuk keperluan tugas kuliah.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Navigasi</h3>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Kontak</h3>
+      <ul>
+        <li>halo@pokok.co.id</li>
+        <li>+62 812 3456 7890</li>
+        <li>Bandung, Indonesia</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Ikuti Kami</h3>
+      <ul class="social-list">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>&copy; 2026 POKOK. Proyek simulasi untuk tugas kuliah — bukan toko sungguhan.</p>
+  </div>
+</footer>
+
+<!-- Penanda Detail dari Modal Produk -->
+<div class="modal-overlay" id="detailOverlay"></div>
+<div class="modal detail-modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+  <button class="modal-close" id="detailClose" aria-label="Tutup detail produk">&times;</button>
+  <div class="detail-body" id="detailBody"><!-- diisi oleh JavaScript --></div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="modal-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+  <div class="cart-head">
+    <h2 id="cartTitle">Keranjang Belanja</h2>
+    <button class="modal-close" id="cartClose" aria-label="Tutup keranjang">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"><!-- diisi oleh JavaScript --></div>
+  <div class="cart-foot" id="cartFoot">
+    <div class="cart-row">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">Rp0</span>
+    </div>
+    <p class="cart-note">Ongkos kirim dihitung saat checkout.</p>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Lanjut ke Checkout</button>
+  </div>
+</aside>
+
+<!-- ============ CHECKOUT MODAL ============ -->
+<div class="modal-overlay" id="checkoutOverlay"></div>
+<div class="modal checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+  <button class="modal-close" id="checkoutClose" aria-label="Tutup checkout">&times;</button>
+  <div class="checkout-body">
+    <h2 id="checkoutTitle">Checkout</h2>
+    <form id="checkoutForm" novalidate>
+      <div class="checkout-grid">
+        <div class="checkout-form-col">
+          <div class="form-group">
+            <label for="fullName">Nama Lengkap</label>
+            <input type="text" id="fullName" name="fullName" placeholder="cth. Andi Saputra" required>
+            <span class="field-error" id="err-fullName"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" name="phone" placeholder="cth. 081234567890" required>
+            <span class="field-error" id="err-phone"></span>
+          </div>
+          <div class="form-group">
+            <label for="address">Alamat</label>
+            <textarea id="address" name="address" rows="3" placeholder="Nama jalan, nomor rumah, RT/RW" required></textarea>
+            <span class="field-error" id="err-address"></span>
+          </div>
+          <div class="form-group">
+            <label for="city">Kota</label>
+            <input type="text" id="city" name="city" placeholder="cth. Bandung" required>
+            <span class="field-error" id="err-city"></span>
+          </div>
+          <div class="form-group">
+            <label for="payment">Metode Pembayaran</label>
+            <select id="payment" name="payment" required>
+              <option value="">Pilih metode pembayaran</option>
+              <option value="transfer">Transfer Bank</option>
+              <option value="ewallet">E-Wallet (OVO/GoPay/Dana)</option>
+              <option value="cod">Bayar di Tempat (COD)</option>
+            </select>
+            <span class="field-error" id="err-payment"></span>
+          </div>
+        </div>
+
+        <div class="checkout-summary-col">
+          <h3>Ringkasan Pesanan</h3>
+          <div class="summary-items" id="summaryItems"><!-- diisi oleh JavaScript --></div>
+          <div class="summary-row"><span>Subtotal</span><span id="summarySubtotal">Rp0</span></div>
+          <div class="summary-row"><span>Ongkos Kirim</span><span id="summaryShipping">Rp15.000</span></div>
+          <div class="summary-row summary-total"><span>Total</span><span id="summaryTotal">Rp0</span></div>
+          <button type="submit" class="btn btn-primary btn-block">Buat Pesanan</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ ORDER SUCCESS ============ -->
+<div class="modal-overlay" id="successOverlay"></div>
+<div class="modal success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+  <button class="modal-close" id="successClose" aria-label="Tutup">&times;</button>
+  <div class="success-body">
+    <div class="success-icon" aria-hidden="true">&#10003;</div>
+    <h2 id="successTitle">Pesanan Berhasil Dibuat</h2>
+    <p>Terima kasih! Nomor pesanan simulasi kamu adalah <strong id="orderNumber">#POKOK-0000</strong>. Ini hanya simulasi untuk tugas kuliah, jadi tidak ada pengiriman sungguhan.</p>
+    <button class="btn btn-primary" id="backToShop">Kembali Belanja</button>
+  </div>
+</div>
+
+<!-- Pop-up pemberitahuan -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
